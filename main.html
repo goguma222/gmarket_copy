@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/jquery-3.7.1.min.js"></script>
+
 </head>
 <body>
     <div id="wrap">
@@ -778,7 +779,7 @@
                   <a href="javascript:void(0)">전체보기</a>
               </article>
               <article class="swiper hot-list-slides">
-                  <ul class="swiper-wrapper">
+                  <ul class="swiper-wrapper hot-prd-list-inner-wrap">
                       <li class="hot-prd-list swiper-slide">
                           <a href="javascript:void(0)">
                               <div class="box-img-group">
@@ -1001,9 +1002,9 @@
                       </li>
                   </ul>
               </article>
-              <article class="control-btn-group">
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
+              <article class="hot-prd-control-btn-group">
+                  <div class="hot-prd-prev spright_img"></div>
+                  <div class="hot-prd-next spright_img"></div>
               </article>
           </section>
           <section class="smile-fresh-group container-inner-wrap">
@@ -2542,88 +2543,9 @@
     </div>
 
     <!-- Swiper JS -->
+    <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".main-slides", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".main-banner-pagination",
-                type: "fraction",
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-
-        $('.start').css({'display':'none'});
-
-        $('.start').on('click', function() {
-            $(this).css({'display':'none'});
-            $('.stop').css({'display':'block'});
-            swiper.autoplay.start();
-            return false;
-        });
-
-        $('.stop').on('click', function() {
-            $(this).css({'display':'none'});
-            $('.start').css({'display':'block'});
-            swiper.autoplay.stop();
-            return false;
-        });
-    </script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper1 = new Swiper('.hot-list-slides', {
-            slidesPerView: 3,
-            direction: getDirection(),
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            on: {
-                resize: function () {
-                    swiper1.changeDirection(getDirection());
-                },
-            },
-        });
-
-        function getDirection() {
-            var windowWidth = window.innerWidth;
-            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-            return direction;
-        }
-    </script>
-
-
-
-    <script>
-        var swiper2 = new Swiper(".hot-list-slides", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+    <script src="./js/slide_swiper.js"></script>
 
     <script>
         var swiper3 = new Swiper(".smile-fresh-prd-slides", {
