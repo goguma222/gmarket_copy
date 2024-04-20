@@ -1518,7 +1518,11 @@ body {
     display: block;
 }
 
-.all-prd-link-btn> a:after {
+.all-prd-link-btn > a {
+    color: #444;
+}
+
+.all-prd-link-btn > a:after {
     overflow: hidden;
     display: inline-block;
     background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) no-repeat;
@@ -1709,4 +1713,187 @@ body {
 }
 
 
+/* 슈퍼딜 */
+.main-superdeal-group {
+    position: relative;
+    margin: 0 0 40px;
+}
 
+.main-superdeal-group:before {
+    content: "";
+    display: block;
+    width: 100%; height: 300px;
+    background-color: var(--green-color);
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+}
+
+.main-superdeal-group > article {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 0;
+}
+
+.main-superdeal-title {
+    position: relative;
+    z-index: 10;
+    width: 160px;
+    height: 44px;
+}
+
+.main-superdeal-title > a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -84px -52px no-repeat;
+    vertical-align: top;
+    text-indent: -9999px;
+}
+
+.superdeal-title {
+    position: relative;
+    margin: 0 0 40px;
+}
+
+.superdeal-title > a {
+    position: absolute;
+    top: 3px; right: 0;
+    z-index: 10;
+    padding-right: 25px;
+    font-size: 15px;
+    color: #777;
+    line-height: 18px;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+.superdeal-title > a:after {
+    content: "";
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat -97px -48px / 170px auto;
+    position: absolute;
+    top: 0;
+}
+
+.superdeal-prd-list {
+    position: relative;
+}
+
+.superdeal-prd-list-inner {
+    display: flex; align-items: center; flex-wrap: wrap; row-gap: 50px; column-gap: 24px;
+    margin: 0 0 50px;
+}
+
+.superdeal-prd-list-inner .product-image {
+    width: 384px; height: 221px;
+}
+
+.superdeal-prd-list-inner .product-image img {
+    border-radius: 6px;
+}
+
+.superdeal-prd-list .product-image {
+    margin: 0 0 20px; height: auto;
+}
+
+.superdeal-prd-list > a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.superdeal-prd-list > a > .product-info-box {
+    float: left;
+}
+
+.superdeal-prd-list > a > .product-info-box > .prd-price-info-box {
+    margin: 0 0 6px;
+}
+
+.prd-price-info-box > .market-price {
+    color: #da120d;
+    font-size: 12px;
+    display: block;
+    margin: 0 0 6px;
+}
+
+.coupon-price > strike {
+    color: #999;
+}
+
+.prd-price-info-box > .discount-price {
+    font-size: 18px;
+    color: #da120d;
+    padding: 0 2px 0 0;
+}
+
+.prd-price-info-box > .prd-price {
+    font-size: 18px; font-weight: bold;
+    color: #da120d;
+}
+
+.prd-price-info-box >  .prd-price > .prd-won {
+    font-weight: 500;
+}
+
+.superdeal-prd-list .prd-name {
+    font-size: 14px; font-weight: 500;
+    color: #222;
+    margin: 0 0 6px;
+}
+
+.superdeal-prd-list .prd-tag-group span {
+    font-size: 12px;
+    color: #666;
+}
+
+.superdeal-prd-list .prd-tag-group span:nth-of-type(1) {
+    color: #067dfd;;
+}
+
+/* 찜버튼 */
+.zzim-btn-group {
+    position: absolute;
+    bottom: 50px; right: 0;
+    background-color: transparent;
+    border: none;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    vertical-align: top;
+    text-indent: -9999px;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sp_homemain_2x.png) no-repeat -78px -68px / 170px auto;
+    width: 40px; height: 40px;
+}
+
+
+/* 해외직구 */
+.overseas-buy-group {
+    background-color: #f2f2f2;
+}
+
+.overseas-buy-inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.overseas-buy-inner > h2 {
+    padding: 40px 0 30px;
+    font-size: 24px;
+}
+
+.overseas-buy-inner .box-item-banner {
+    width: 465px; height: 346px;
+    border-radius: 10px;
+}
+
+.overseas-buy-inner .box-item-banner > a {
+    display: block;
+}
+
+.overseas-buy-inner .box-item-banner > a > img {
+    display: block;
+    width: 100%; height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
