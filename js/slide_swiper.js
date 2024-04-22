@@ -44,15 +44,15 @@ var swiper1 = new Swiper('.hot-list-slides', {
 
 var swiper3 = new Swiper(".smile-fresh-prd-slides", {
     navigation: {
-        nextEl: ".smile-prd-btn-next",
-        prevEl: ".smile-prd-btn-prev",
+        nextEl: ".smile-prd-btn-next1",
+        prevEl: ".smile-prd-btn-prev1",
     },
 });
 
 var swiper4 = new Swiper(".smile-baesong-prd-slides", {
     navigation: {
-        nextEl: ".smile-delivery-btn-next",
-        prevEl: ".smile-delivery-btn-prev",
+        nextEl: ".smile-delivery-btn-next1",
+        prevEl: ".smile-delivery-btn-prev1",
     },
 });
 
@@ -60,8 +60,8 @@ var swiper5 = new Swiper(".product-list-wrap", {
     slidesPerView: 3,
     spaceBetween: 20,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".smile-prd-btn-next2",
+        prevEl: ".smile-prd-btn-prev2",
     },
 });
 

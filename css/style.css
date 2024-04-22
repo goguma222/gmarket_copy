@@ -445,6 +445,8 @@ body {
 .box-category-all-layer {
     position: relative;
     box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .box-category-all-layer:after {
@@ -456,7 +458,7 @@ body {
 
 .list-category-all {
     position: absolute;
-    top: 0; left: 352px;
+    top: 0; left: 0;
     z-index: 2;
 }
 
@@ -657,7 +659,7 @@ body {
 /* 메인슬라이드 시작, 일시정지 */
 .stop-start-btn {
     position: absolute;
-    bottom: 10px; right: 500px;
+    bottom: 10px; right: 144px;
     z-index: 1;
     cursor: pointer;
 }
@@ -698,7 +700,7 @@ body {
     border-radius: 40px 0 0 40px;
     line-height: 40px;
     font-size: 16px; font-weight: 500;
-    bottom: 10px; right: 420px;
+    bottom: 10px; right: 66px;
     opacity: 0.4;
     z-index: 1;
 }
@@ -706,7 +708,7 @@ body {
 /* 배너 더보기 */
 .event-banner-group {
     position: absolute;
-    bottom: 9px; right: 373px;
+    bottom: 9px; right: 20px;
     z-index: 1;
     cursor: pointer;
 }
@@ -732,7 +734,7 @@ body {
 
 .main-banner-slide-arrow-btn > .swiper-button-next {
     width: 36px; height: auto;
-    right: 372px;
+    right: 20px;
     z-index: 1;
 }
 .main-banner-slide-arrow-btn > .swiper-button-next:after {
@@ -743,14 +745,13 @@ body {
     vertical-align: top;
     position: relative;
     z-index: -1;
-    width: 38px;
-    height: 62px;
+    width: 38px; height: 62px;
     background-position: -290px -90px;
 }
 
 .main-banner-slide-arrow-btn > .swiper-button-prev {
     width: 36px; height: auto;
-    left: 595px;
+    left: 242px;
     z-index: 1;
 }
 .main-banner-slide-arrow-btn > .swiper-button-prev:after {
@@ -1081,33 +1082,27 @@ body {
     position: relative;
 }
 
-.smile-delivery-btn-next {
-    position: absolute;
-    top: 50%; right: 20px;
-    transform: translateY(-50%);
-    z-index: 2;
+.smile-delivery-btn-next1 {
     cursor: pointer;
+    float: right;
+    position: relative;
+    right: 14px;
 }
 
-.smile-delivery-btn-next > i {
-    font-size: 50px;
-}
-
-.smile-delivery-btn-prev {
-    position: absolute;
-    top: 50%; left: 20px;
-    transform: translateY(-50%);
-    z-index: 2;
-    cursor: pointer;
-}
-
-.smile-delivery-btn-prev > i {
-    font-size: 40px;
+.smile-delivery-btn-next1 > i {
+    font-size: 2rem;
     color: #fff;
 }
 
-.smile-delivery-btn-next > i {
-    font-size: 40px;
+.smile-delivery-btn-prev1 {
+    cursor: pointer;
+    float: left;
+    position: relative;
+    left: 14px;
+}
+
+.smile-delivery-btn-prev1 > i {
+    font-size: 2rem;
     color: #fff;
 }
 
@@ -1600,15 +1595,26 @@ body {
 /* 슬라이드 버튼 */
 .slide-control-group {
     position: relative;
-    top: -200px;
+    top: -118px;
     z-index: 2;
 }
 
-.smile-prd-btn-next {
-    position: absolute;
-    right: -24px;
+.slide-control-group:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.smile-prd-btn-next1 {
+    float: right;
+    position: relative;
+    right: 14px;
     cursor: pointer;
-    width: auto;
+}
+
+.smile-prd-btn-next1 > i {
+    font-size: 2rem;
+    color: #fff;
 }
 
 .smile-prd-btn-next:before {
@@ -1622,11 +1628,16 @@ body {
 
 .smile-prd-btn-next:hover:before{ opacity: 1; background-position: -496px 0; }
 
-.smile-prd-btn-prev {
-    position: absolute;
-    left: -24px;
+.smile-prd-btn-prev1 {
+    float: left;
+    position: relative;
+    left: 14px;
     cursor: pointer;
-    width: auto;
+}
+
+.smile-prd-btn-prev1 > i {
+    font-size: 2rem;
+    color: #fff;
 }
 
 .smile-prd-btn-prev:after {
@@ -1639,6 +1650,66 @@ body {
 }
 
 .smile-prd-btn-prev:hover:after{ opacity: 1; background-position: -454px 0;  }
+
+
+/* 슬라이드 버튼 2 홈쇼핑 모아보기 */
+.slide-control-group2 {
+    position: relative;
+    top: -230px;
+    z-index: 2;
+}
+
+.slide-control-group2:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.smile-prd-btn-next2 {
+    float: right;
+    position: relative;
+    right: -24px;
+    cursor: pointer;
+}
+
+.smile-prd-btn-next2 > i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.smile-prd-btn-next2:before {
+    display: block;
+    opacity: 1;
+    width: 42px; height: 42px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -42px 0 no-repeat;
+    transition: opacity ease 0.25s;
+}
+
+.smile-prd-btn-next2:hover:before{ opacity: 1; background-position: -496px 0; }
+
+.smile-prd-btn-prev2 {
+    float: left;
+    position: relative;
+    left: -24px;
+    cursor: pointer;
+}
+
+.smile-prd-btn-prev2 > i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.smile-prd-btn-prev2:after {
+    display: block;
+    opacity: 0;
+    width: 42px; height: 42px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -454px 0 no-repeat;
+    transition: opacity ease 0.25s;
+}
+
+.smile-prd-btn-prev2:hover:after{ opacity: 1; background-position: -454px 0;  }
 
 /* 상품리스트 이미지 */
 .product-image {
