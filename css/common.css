@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
+:root {
+    --green-color: #00c01d;;
+    --orange-color: #FF8C05;
+    --yellow-color: #FECA06;
+    --sky-blue: #00B8A4;
+}
+
+@font-face {
+    /* noto-sans-kr-300 - korean */
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans KR Light'), local('NotoSansKR-Light'), url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    /* noto-sans-kr-regular - korean */
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'), url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    /* noto-sans-kr-500 - korean */
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'), url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    /* noto-sans-kr-700 - korean */
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'), url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/noto-sans-kr-v11-korean-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Gmarket Sans Bold'), local('GmarketSans-Bold'), url('//script.gmarket.com/fonts/GmarketSansBold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/GmarketSansBold.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Gmarket Sans Medium'), local('GmarketSans-Medium'), url('//script.gmarket.com/fonts/GmarketSansMedium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/GmarketSansMedium.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Gmarket Sans Light'), local('GmarketSans-Light'), url('//script.gmarket.com/fonts/GmarketSansLight.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('//script.gmarket.com/fonts/GmarketSansLight.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* 공통 START */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Roboto, Noto Sans CJK KR, Tahoma, 'Noto Sans KR', 'Gmarket Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* 스와이퍼 */
+html,
+body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-fraction {
+    left: auto !important;
+}
+
+
+/* 공통 */
+.spright_img {
+    overflow: hidden;
+    display: inline-block;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) no-repeat;
+    line-height: 999px;
+    vertical-align: top;
+}
+
+.ellipsis_line1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-height: 18px;
+    height: auto;
+}
+
+.ellipsis_line2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 18px;
+    height: auto;
+}
+
+.float_clear_after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.float_clear_before {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.event_style_01 {
+    font-size: 12px; font-weight: 500;
+    color: #fff; background-color: var(--orange-color);
+    padding: 2px 4px;
+}
+
+.event_style_02 {
+    font-size: 12px; font-weight: 500;
+    color: #fff; background-color: var(--yellow-color);
+    padding: 2px 4px;
+}
+
+.event_style_03 {
+    font-size: 12px; font-weight: 500;
+    color: #fff; background-color: var(--sky-blue);
+    padding: 2px 4px;
+}
+/* 공통 */

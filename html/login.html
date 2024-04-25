@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>G-마켓 - 로그인</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <section class="login-form-wrap">
+        <article class="g-logo-box">
+            <h2>
+                <a href="#">
+                    <span class="g-logo">gmarket</span>
+                </a>
+            </h2>
+        </article>
+        <article class="login-form-group">
+            <form id="login-form" action="#" method="post">
+                <div class="btn-login-type">
+                    <button type="button" class="login-type login-type1">회원</button>
+                    <button type="button" class="login-type login-type2">비회원</button>
+                </div>
+                <div class="login-field">
+                    <fieldset>
+                        <legend class="field-name">회원 정보 입력</legend>
+                        <div class="box-form-group">
+                            <label for="user-id">아이디를 입력하세요</label>
+                            <input type="text" name="user_id" class="user-id" id="user-id" placeholder="아이디">
+                        </div>
+                        <div class="box-form-group">
+                            <label for="user-password">비밀번호를 입력하세요</label>
+                            <input type="text" name="user_password" class="user-password" id="user-password" placeholder="비밀번호">
+                            <button type="button" class="password-display">표시하기</button>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="id-check-box-group">
+                    <input type="checkbox" name="id_save_check" id="id_save_check">
+                    <label for="id_save_check">아이디 저장</label>
+                </div>
+                <div class="submit-btn-wrap">
+                    <button type="submit" class="submit-btn">로그인</button>
+                </div>
+                <div class="user-btn-wrap">
+                    <a href="#">아이디 찾기</a>
+                    <a href="#">비밀번호 재설정</a>
+                    <a href="#">회원가입</a>
+                </div>
+                <div class="social-login-group">
+                    <h3>간편 로그인</h3>
+                    <div class="social-login-img">
+                        <a href="#">카카오톡</a>
+                    </div>
+                    <div class="social-login-img">
+                        <a href="#">토스</a>
+                    </div>
+                    <div class="social-login-img">
+                        <a href="#">애플</a>
+                    </div>
+                    <div class="social-login-img">
+                        <a href="#">네이버</a>
+                    </div>
+                </div>
+            </form>
+        </article>
+    </section>
+
+</body>
+</html>
