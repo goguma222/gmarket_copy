@@ -3,7 +3,7 @@
 @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 
 :root {
-    --green-color: #10af29;
+    --green-color: #00c01d;;
     --orange-color: #FF8C05;
     --yellow-color: #FECA06;
     --sky-blue: #00B8A4;
@@ -184,6 +184,7 @@ body {
 #wrap {
     width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 
@@ -445,6 +446,8 @@ body {
 .box-category-all-layer {
     position: relative;
     box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .box-category-all-layer:after {
@@ -456,7 +459,7 @@ body {
 
 .list-category-all {
     position: absolute;
-    top: 0; left: 352px;
+    top: 0; left: 0;
     z-index: 2;
 }
 
@@ -657,7 +660,7 @@ body {
 /* 메인슬라이드 시작, 일시정지 */
 .stop-start-btn {
     position: absolute;
-    bottom: 10px; right: 500px;
+    bottom: 10px; right: 144px;
     z-index: 1;
     cursor: pointer;
 }
@@ -698,7 +701,7 @@ body {
     border-radius: 40px 0 0 40px;
     line-height: 40px;
     font-size: 16px; font-weight: 500;
-    bottom: 10px; right: 420px;
+    bottom: 10px; right: 66px;
     opacity: 0.4;
     z-index: 1;
 }
@@ -706,7 +709,7 @@ body {
 /* 배너 더보기 */
 .event-banner-group {
     position: absolute;
-    bottom: 9px; right: 373px;
+    bottom: 9px; right: 20px;
     z-index: 1;
     cursor: pointer;
 }
@@ -732,7 +735,7 @@ body {
 
 .main-banner-slide-arrow-btn > .swiper-button-next {
     width: 36px; height: auto;
-    right: 372px;
+    right: 20px;
     z-index: 1;
 }
 .main-banner-slide-arrow-btn > .swiper-button-next:after {
@@ -743,14 +746,13 @@ body {
     vertical-align: top;
     position: relative;
     z-index: -1;
-    width: 38px;
-    height: 62px;
+    width: 38px; height: 62px;
     background-position: -290px -90px;
 }
 
 .main-banner-slide-arrow-btn > .swiper-button-prev {
     width: 36px; height: auto;
-    left: 595px;
+    left: 242px;
     z-index: 1;
 }
 .main-banner-slide-arrow-btn > .swiper-button-prev:after {
@@ -1081,33 +1083,27 @@ body {
     position: relative;
 }
 
-.smile-delivery-btn-next {
-    position: absolute;
-    top: 50%; right: 20px;
-    transform: translateY(-50%);
-    z-index: 2;
+.smile-delivery-btn-next1 {
     cursor: pointer;
+    float: right;
+    position: relative;
+    right: 14px;
 }
 
-.smile-delivery-btn-next > i {
-    font-size: 50px;
-}
-
-.smile-delivery-btn-prev {
-    position: absolute;
-    top: 50%; left: 20px;
-    transform: translateY(-50%);
-    z-index: 2;
-    cursor: pointer;
-}
-
-.smile-delivery-btn-prev > i {
-    font-size: 40px;
+.smile-delivery-btn-next1 > i {
+    font-size: 2rem;
     color: #fff;
 }
 
-.smile-delivery-btn-next > i {
-    font-size: 40px;
+.smile-delivery-btn-prev1 {
+    cursor: pointer;
+    float: left;
+    position: relative;
+    left: 14px;
+}
+
+.smile-delivery-btn-prev1 > i {
+    font-size: 2rem;
     color: #fff;
 }
 
@@ -1600,15 +1596,26 @@ body {
 /* 슬라이드 버튼 */
 .slide-control-group {
     position: relative;
-    top: -200px;
+    top: -118px;
     z-index: 2;
 }
 
-.smile-prd-btn-next {
-    position: absolute;
-    right: -24px;
+.slide-control-group:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.smile-prd-btn-next1 {
+    float: right;
+    position: relative;
+    right: 14px;
     cursor: pointer;
-    width: auto;
+}
+
+.smile-prd-btn-next1 > i {
+    font-size: 2rem;
+    color: #fff;
 }
 
 .smile-prd-btn-next:before {
@@ -1622,11 +1629,16 @@ body {
 
 .smile-prd-btn-next:hover:before{ opacity: 1; background-position: -496px 0; }
 
-.smile-prd-btn-prev {
-    position: absolute;
-    left: -24px;
+.smile-prd-btn-prev1 {
+    float: left;
+    position: relative;
+    left: 14px;
     cursor: pointer;
-    width: auto;
+}
+
+.smile-prd-btn-prev1 > i {
+    font-size: 2rem;
+    color: #fff;
 }
 
 .smile-prd-btn-prev:after {
@@ -1639,6 +1651,66 @@ body {
 }
 
 .smile-prd-btn-prev:hover:after{ opacity: 1; background-position: -454px 0;  }
+
+
+/* 슬라이드 버튼 2 홈쇼핑 모아보기 */
+.slide-control-group2 {
+    position: relative;
+    top: -230px;
+    z-index: 2;
+}
+
+.slide-control-group2:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.smile-prd-btn-next2 {
+    float: right;
+    position: relative;
+    right: -24px;
+    cursor: pointer;
+}
+
+.smile-prd-btn-next2 > i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.smile-prd-btn-next2:before {
+    display: block;
+    opacity: 1;
+    width: 42px; height: 42px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -42px 0 no-repeat;
+    transition: opacity ease 0.25s;
+}
+
+.smile-prd-btn-next2:hover:before{ opacity: 1; background-position: -496px 0; }
+
+.smile-prd-btn-prev2 {
+    float: left;
+    position: relative;
+    left: -24px;
+    cursor: pointer;
+}
+
+.smile-prd-btn-prev2 > i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.smile-prd-btn-prev2:after {
+    display: block;
+    opacity: 0;
+    width: 42px; height: 42px;
+    content: '';
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/homemain/sprite__homemain.svg) -454px 0 no-repeat;
+    transition: opacity ease 0.25s;
+}
+
+.smile-prd-btn-prev2:hover:after{ opacity: 1; background-position: -454px 0;  }
 
 /* 상품리스트 이미지 */
 .product-image {
@@ -1874,7 +1946,7 @@ body {
 
 .overseas-buy-inner {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 60px auto; padding: 0 0 40px;
 }
 
 .overseas-buy-inner > h2 {
@@ -1882,9 +1954,22 @@ body {
     font-size: 24px;
 }
 
+/* 해외직구 컨텐츠 박스 */
+.overseas-buy-inner .box-item-group {
+    background-color: #fff; border-radius: 10px;
+}
+
+.overseas-buy-inner .box-item-group:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 이미지 */
 .overseas-buy-inner .box-item-banner {
     width: 465px; height: 346px;
     border-radius: 10px;
+    float: left;
 }
 
 .overseas-buy-inner .box-item-banner > a {
@@ -1896,4 +1981,220 @@ body {
     width: 100%; height: auto;
     object-fit: cover;
     border-radius: 10px;
+}
+
+/* 상품들 */
+.overseas-buy-inner .box-item {
+    float: left;
+    width: calc(100% - 465px);
+}
+
+.overseas-buy-inner .box-item-title {
+    text-align: center;
+    padding: 40px 0 0;
+}
+
+.overseas-buy-inner .box-item-title p {
+    color: #999;
+    font-weight: 500;
+    padding: 0 0 20px;
+}
+
+.overseas-buy-inner .box-item-title h3 {
+    font-size: 30px; font-weight: 300;
+    color: #222;
+    font-family: 'Gmarket Sans';
+}
+
+/* 상품 리스트 */
+.overseas-buy-inner .box-item .box-item-list-box {
+    display: flex; align-items: center; justify-content: space-between;
+}
+
+.overseas-buy-inner .box-item .box-item-list-box > .box-item-list {
+    width: 25%;
+}
+
+.overseas-buy-inner .box-item-img {
+    width: 128px; height: 128px;
+    margin: 0 auto 10px auto;
+}
+
+.overseas-buy-inner .box-item-img > img {
+    display: block;
+    width: 100%; height: auto;
+    object-fit: cover;
+}
+
+/* 상품정보 이름, 가격 */
+.overseas-buy-inner .box-item-info {
+    text-align: center;
+}
+
+.overseas-buy-inner .box-item-info h4 {
+    font-size: 14px; font-width: 500;
+    color: #222;
+    margin: 0 0 6px;
+}
+
+.overseas-buy-inner .box-item-info .box-price > span:nth-of-type(1) {
+    color: #222;
+    font-size: 18px; font-weight: bold;
+}
+
+.overseas-buy-inner .box-item-info .box-price > span:nth-of-type(2) {
+    color: #222;
+    font-size: 14px;
+    position: relative;
+    left: -2px; top: -1px;
+}
+
+
+/* 오늘의 파워 상품 */
+.today-power-group {
+    width: 1200px;
+    margin: 0 auto 60px auto;
+}
+
+.today-power-group .box-img {
+    border: 1px solid #ddd; border-radius: 6px;
+    width: 222px; height: 222px;
+    margin: 0 0 10px;
+}
+
+.today-power-group .box-img > img {
+    border-radius: 6px;
+    display: block;
+    object-fit: cover;
+    width: 100%; height: auto;
+}
+
+/* 상품 정보 */
+.today-power-group .box-item-info {
+    text-align: left;
+}
+
+.today-power-group .box-item-info > h4 {
+    font-size: 14px; font-weight: 500;
+    color: #232323;
+    margin: 0 0 8px;
+}
+
+.today-power-group .box-item-info > .box-price > span:first-of-type {
+    font-size: 17px; font-weight: bold;
+    color: #232323;
+}
+
+.today-power-group .box-item-info > .box-price > span:last-of-type {
+    font-size: 14px; font-weight: 500;
+    color: #232323;
+}
+
+
+/* 파워미니샵, 찬스상품 */
+.power-minishop-wrap {
+    width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.power-minishop-wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.power-minishop-wrap > .power-minishop-group {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.power-minishop-wrap > .chance-prd-group {
+    float: left;
+    width: calc(100% - 485px);
+}
+
+
+/* 파워미니샵 > 이미지 */
+.power-minishop-group > .inner-title > span {
+    width: 20px;height: 14px;
+    float: right;
+    font-size: 10px; font-weight: 500;
+    text-align: center;
+    line-height: 14px;
+    color: #ddd;
+    border: 1px solid #ddd; border-radius: 2px;
+    margin: 4px 0 0;
+    cursor: pointer;
+}
+
+.power-minishop-group > .box-img {
+    width: 463px; height: 330px;
+    border: 1px solid #ddd; border-radius: 6px;
+}
+
+.power-minishop-group > .box-img > img {
+    display: block;
+    width: 100%; height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* 파워미니샵 > 찬스상품 */
+.chance-prd-group > .content-box {
+    border: 1px solid #ddd; border-radius: 6px;
+    height: 330px;
+}
+
+.chance-prd-group .item-list-group {
+    padding: 40px;
+}
+
+.chance-prd-group .item-list-group:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.chance-prd-group .item-list-group .item-list {
+    float: left;
+    width: calc(100% - 436px);
+    padding: 0 20px 0 0;
+}
+
+.chance-prd-group .item-list-group .item-list:last-of-type {
+    padding: 0;
+}
+
+.chance-prd-group .item-list-group .item-list .item-list-img {
+    border: 1px solid #ddd; border-radius: 6px;
+    width: 195px; height: 212px;
+}
+
+.chance-prd-group .item-list-group .item-list .item-list-img > img {
+    display: block;
+    object-fit: cover;
+    width: 100%; height: auto;
+}
+
+
+/* 폰트 다운로드 */
+.section-main-fontguide {
+    min-width: 1200px; height: 60px;
+}
+
+.font-down {
+    min-width: 1200px; height: 60px;
+}
+
+.font-down > a {
+    display: block;
+    min-width: 1200px; height: 60px;
+    background-color: var(--green-color);
+}
+
+.font-down > a > img {
+    display: block;
+    object-fit: cover;
+    width: auto; height: 100%;
+    margin: 0 auto;
 }
