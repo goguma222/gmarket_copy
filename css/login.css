@@ -164,4 +164,75 @@
     cursor: pointer;
 }
 
+/* 아이디찾기, 비밀번호재설정, 회원가입 */
 
+.user-link-group {
+    display: flex; align-items: center; justify-content: center;
+    padding: 0 0 40px; margin: 0 0 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-link-group .user-link > a {
+    padding: 0 10px 0 10px;
+    font-size: 14px;
+    color: #222;
+}
+
+.user-link-group .user-link:after {
+    content: "";
+    display: inline-block;
+    width: 1px; height: 10px;
+    background-color: #ddd;
+}
+
+.user-link-group .user-link:last-of-type:after {
+    display: none;
+}
+
+/* 간편로그인 */
+.social-login-group > h3 {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 20px;
+}
+
+.social-login-group .social-login-img-group {
+    display: flex; align-items: center; justify-content: center; gap: 20px;
+}
+
+.social-login-group .social-login-img {
+    position: relative;
+    width: 48px; height: 48px;
+    text-indent: -9999px;
+}
+
+.social-login-group .social-login-img > a {
+}
+
+.social-login-group .social-login-img > a:before {
+    content: '';
+    position: absolute;
+    top: 0; left: 50%;
+    width: 48px; height: 49px;
+    margin: 0 0 0 -24px;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 0;
+    background: url(//pics.gmarket.co.kr/pc/sprite/kr/login/sprite__login_v2.png?v=20240119) no-repeat;
+    background-size: 200px auto;
+    background-position: 0 -302px;
+}
+
+.social-login-group .social-login-img:nth-of-type(2) > a:before {
+    background-position: -52px -302px;
+}
+
+.social-login-group .social-login-img:nth-of-type(3) > a:before {
+    background-position: -104px -302px;
+}
+
+.social-login-group .social-login-img:nth-of-type(4) > a:before {
+    background-position: 0 -354px;
+}
