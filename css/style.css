@@ -285,6 +285,12 @@
 
 .main-banner-slides-group {
     width: 100%;
+    position: relative;
+}
+
+/* 슬라이드 배너 이미지 */
+.main-visual-slide {
+    max-height: 400px;
 }
 
 .main-slides-box {
@@ -1415,9 +1421,11 @@
 
 /* 슬라이드 버튼 */
 .slide-control-group {
-    position: relative;
-    top: -118px;
-    z-index: 2;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1;
 }
 
 .slide-control-group:after {
