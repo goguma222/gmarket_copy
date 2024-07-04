@@ -818,13 +818,14 @@
 
 .fresh-prd-list > a > .fresh-prd-info-group {
     float: left;
+    padding: 0 0 0 60px;
 }
 
 .fresh-prd-list > a > .fresh-prd-img {
     float: right;
     width: 160px; height: 160px;
     border-radius: 50%;
-    padding: 0 0 0 80px;
+    padding: 0 60px 0 0;
 }
 
 .fresh-prd-list > a > .fresh-prd-img > img {
